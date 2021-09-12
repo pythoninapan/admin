@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{% url 'register' %}" >Home</a>
+     <a href="{% url 'register' %}" >Home</a>
+     <a href="{% url 'register' %}" >Home</a>
+     <a href="{% url 'register' %}" >Home</a>
+     <a href="{% url 'register' %}" >Home</a>
+     <a href="{% url 'register' %}" >Home</a>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <h2>
+                {{ article.title }}
+                <a href="{{ article.slug }}" >перейте</a>
+            </h2>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
